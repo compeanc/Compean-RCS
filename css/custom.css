@@ -95,3 +95,15 @@ img, video, iframe {
   max-width: 100%;
   height: auto;
 }
+/* --- Tighter Fluid Typography for Mobile Header --- */
+.navbar-brand, 
+header.masthead h1, 
+.site-heading h1, 
+[class*="brand"] {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  max-width: 100% !important;
+  font-size: clamp(0.95rem, 3.5vw, 1.5rem) !important; /* Smaller range so it scales down on phones */
+  line-height: 1.25 !important;
+}
