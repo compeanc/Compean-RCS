@@ -1,0 +1,74 @@
+/* Forest Green & Cream Beige Theme */
+:root {
+  --bs-primary: #2C5F2D; /* Pantone Forest Green */
+  --bs-primary-rgb: 44, 95, 45;
+}
+
+/* 1. Alternate the Section Background Colors */
+body {
+  background-color: #FFFFFF !important; /* Sets the baseline to crisp white */
+}
+
+#services {
+  background-color: #F8F5EE !important; /* Services = Cream */
+}
+
+#team {
+  background-color: #FFFFFF !important; /* About / Bio = White */
+}
+
+#contact {
+  background-color: #F8F5EE !important; /* Contact = Cream */
+}
+
+/* 2. Fixes the Top Navigation Logo & Link Hover Colors */
+#mainNav .navbar-brand,
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #2C5F2D !important;
+}
+
+/* 3. Colors the Service Icons Forest Green */
+.text-primary {
+  color: #2C5F2D !important;
+}
+
+/* 4. Forces Buttons to Forest Green with White Text */
+.btn-primary {
+  background-color: #2C5F2D !important;
+  border-color: #2C5F2D !important;
+  color: #ffffff !important; 
+}
+
+/* 5. Makes the button slightly darker when clicked or hovered */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #1F4520 !important; 
+  border-color: #19381A !important;
+  color: #ffffff !important;
+}
+/* 6. Fix the invisible text in the Contact Section */
+#contact .section-heading {
+  color: #2C5F2D !important; /* Makes the GET IN TOUCH text Forest Green */
+}
+#contact .section-subheading {
+  color: #6c757d !important; /* Makes the subheader text a readable gray */
+}
+
+/* 7. Make the top-left logo readable against the dark photo */
+#mainNav .navbar-brand {
+  color: #ffffff !important; /* Makes it white initially */
+}
+#mainNav.navbar-shrink .navbar-brand {
+  color: #2C5F2D !important; /* Turns it back to Forest Green when you scroll down */
+}
+/* Change the Background Image */
+header.masthead {
+  background-image: url("../assets/img/new-bg.jpeg") !important;
+}
+/* Adds a dark overlay to the background image for better text readability */
+header.masthead {
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
