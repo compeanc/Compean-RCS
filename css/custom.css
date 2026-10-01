@@ -72,3 +72,26 @@ header.masthead {
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.3) !important;
 }
+/* --- Mobile Responsiveness & Overflow Fixes --- */
+
+/* 1. Prevent horizontal scrolling/clipping on small screens */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 2. Fluid Typography so headings never clip on mobile */
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+  word-break: break-word;
+}
+
+h2 {
+  font-size: clamp(1.2rem, 4vw, 2rem) !important;
+}
+
+/* 3. Ensure images scale nicely inside containers */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
