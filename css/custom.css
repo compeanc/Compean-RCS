@@ -106,4 +106,66 @@ header.masthead h1,
   max-width: 100% !important;
   font-size: clamp(0.95rem, 3.5vw, 1.5rem) !important; /* Smaller range so it scales down on phones */
   line-height: 1.25 !important;
+}/* ===== COMPEAN BRANDING ===== */
+
+/* Company name in navigation */
+#mainNav .navbar-brand,
+#mainNav.navbar-shrink .navbar-brand {
+    color: #ffffff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.3rem, 2.4vw, 1.85rem) !important;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    line-height: 1.2 !important;
+    text-transform: uppercase;
+}
+
+/* Circular O inspired by the company logo */
+#mainNav .navbar-brand .brand-o-mark {
+    display: inline-block;
+    font-size: inherit !important;
+    width: 0.78em;
+    height: 0.78em;
+    margin: 0 0.025em;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 280deg,
+        #55a66a 0deg 75deg,
+        #ffffff 75deg 360deg
+    );
+    -webkit-mask: radial-gradient(
+        circle,
+        transparent 0 38%,
+        #000 43%
+    );
+    mask: radial-gradient(
+        circle,
+        transparent 0 38%,
+        #000 43%
+    );
+    vertical-align: -0.06em;
+}
+
+/* White navigation links */
+#mainNav .navbar-nav .nav-item .nav-link,
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Green underline on hover */
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:focus-visible {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+    text-decoration-color: #55a66a !important;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+}
+
+/* Footer company logo */
+.footer-logo {
+    width: 190px;
+    max-width: 100%;
+    height: auto;
 }
